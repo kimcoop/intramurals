@@ -1,0 +1,20 @@
+
+Advertisements? Will these expand over time with increase in IM Leagues popularity?
+
+What is it written in?
+
+WYZIWYG editor?
+
+How is admin handled?
+	Easy to add/revoke/edit access?
+
+Database? What happens if their system fails?
+
+Transitioning from current system to theirs? Time/problems?
+
+If I want a change -- is it possible to make it myself, even if I'm not technically-minded? What kind of changes would require me to contact IM Leagues versus doing it myself?
+
+Is it possible to "mess up" my site? Ie break something? What happens if I break something or want to undo a change I've made?
+
+Can I expect to see updates from IM Leagues that affect the look and feel of my site or make it difficult for me to adapt to?
+

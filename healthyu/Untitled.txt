@@ -1,0 +1,24 @@
+
+User A
+
+20 y/o, junior, no experience with mobile dev, nursing
+Task 1: saving takes too long, hesitates (unsure)
+Overall: Good colors/icons. Didn't really get the hint for Custom IDs. Should have an "Invite" within the "Assign To" popup as well. Font for SociaList should be consistent throughout app. Items/lists should be capitalized by default. Prev & next with swipe functionality = redundant? Group votes no (novice vs advanced users)
+
+User B
+
+20 y/o, junior, 3 years mobile dev, Info science
+Task 1: There's no actual "Ok" button for the Push Notifications popup. 
+Clicked "Manage Lists" twice = unclear dashboard labeling.
+Hesitation/confusion trying to submit new list name. Lag on save = confusion.
+
+Task 3: Lag on Assignment
+
+
+User C
+
+22 y/o, graduated, 3 years mobile dev, Computer science
+
+
+
+User D

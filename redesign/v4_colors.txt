@@ -1,0 +1,9 @@
+
+gold bbb87c
+
+banner dark 900000
+banner light7d0000
+
+dark bg 333333
+
+light bg ede9de

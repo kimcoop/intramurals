@@ -1,0 +1,22 @@
+id,"name",day,"time",facility_id,"term",instructor_id
+100,"Intro to Rock Climbing",2,"2pm - 3pm",1,"SP12",11
+200,"Cycling",0,"12pm - 1pm",2,"SP12",8
+201,"Cycling",0,"2pm - 3pm",2,"SP12",9
+202,"Cycling",1,"5:30pm - 6:30pm",2,"SP12",9
+203,"Cycling",2,"5:30pm - 6:30pm",2,"SP12",NULL
+204,"Cycling",3,"5:30pm - 6:30pm",2,"SP12",8
+205,"Cycling",4,"5:30pm - 6:30pm",2,"SP12",8
+206,"Cycling",6,"12pm - 1pm",2,"SP12",8
+240,"Belly Dancing",1,"6:30pm - 7:30pm",4,"SP12",NULL
+245,"Hip Hop Dancing",1,"7:30pm - 8:30pm",3,"SP12",10
+310,"Zumba",5,"11am - 12pm",4,"SP12",2
+311,"Zumba",1,"3pm - 4pm",4,"SP12",2
+312,"Zumba",3,"3pm - 4pm",4,"SP12",2
+320,"Bootcamp Fitness",1,"9am - 10am",4,"SP12",NULL
+322,"Bootcamp Fitness",3,"9am - 10am",4,"SP12",1
+323,"Bootcamp Fitness",4,"9am - 10am",4,"SP12",1
+330,"Pilates",1,"10am - 11am",4,"SP12",0
+331,"Pilates",3,"10am - 11am",4,"SP12",1
+340,"Salsa Dancing",5,"12:15pm - 1:15pm",4,"SP12",13
+350,"Beginner Swim",1,"7pm - 8pm",4,"SP12",12
+351,"Beginner Swim",2,"7pm - 8pm",4,"SP12",12

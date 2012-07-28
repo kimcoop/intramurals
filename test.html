@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>K. Cooperrider</title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+	
+
+</script>
+
+
+<style>
+
+.test {
+-moz-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+
+-moz-box-shadow: inset 0 0 5px #888;
+-webkit-box-shadow: inset 0 0 5px#888;
+box-shadow: inner 0 0 5px #888;
+}
+
+
+.rounded {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.text-shadow {
+	text-shadow: 5px 1px 10px #333;
+}
+
+.shadow {
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+body {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	width: 100%;
+	background: #fff;
+}
+
+#container {
+	width: 550px;
+	background: #fff;
+	margin: 40px auto;
+	overflow: hidden;
+	padding: 10px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #ddd;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div id="container">
+
+<section>
+<h3>Test header</h3>
+
+lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+</section>
+</div>
+
+
+</body>
+</html>

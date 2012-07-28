@@ -1,0 +1,22 @@
+
+
+dark dark blue #111150
+dark dark blue #115
+electric blue #009
+really dark blue #0B0B33
+little darker than electric #00007D
+
+dark yellow #A8A87E
+really light yellow #F7F7F3
+nice gold #BBB87C
+
+medium yellow #DADAB0
+
+my pitt light yellow bg #EDE9DE
+
+nice grey text #404040
+
+pitt panthers.com 
+blue #1142747
+blue 2 #1E3966
+gold #BFB67F

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Test</title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="galleria/galleria-1.2.6.min.js"></script>
+<script src="galleria/themes/classic/galleria.classic.min.js"></script>
+
+<script type="text/javascript">
+
+	$(function() {	
+	
+	//alert('test');
+	console.log('test');
+	
+			$('#gallery').galleria({
+					width:500,
+					height:500,
+        	autoplay: 1800,
+        	showInfo: false
+			});
+	
+	});
+
+</script>
+
+
+<style>
+
+.test {
+-moz-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+
+-moz-box-shadow: inset 0 0 5px #888;
+-webkit-box-shadow: inset 0 0 5px#888;
+box-shadow: inner 0 0 5px #888;
+}
+
+
+.rounded {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.text-shadow {
+	text-shadow: 5px 1px 10px #333;
+}
+
+.shadow {
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+body {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	width: 100%;
+	background: #fff;
+}
+
+#container {
+	width: 550px;
+	background: #fff;
+	margin: 40px auto;
+	overflow: hidden;
+	padding: 10px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #ddd;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div id="container">
+
+
+<div id="gallery">
+    <a href="images/strongman_images/2012/IMG_0065.png"><img src="images/strongman_images/2012/IMG_0065.png" alt="My description" title="My title"></a>
+    <a href="images/strongman_images/2012/IMG_0066.png"><img src="images/strongman_images/2012/IMG_0066.png" alt="Another text" title="Another title"></a>
+    <a href="images/strongman_images/2012/IMG_0072.png"><img src="images/strongman_images/2012/IMG_0072.png" alt="My description" title="My title"></a>
+    <a href="images/strongman_images/2012/IMG_0073.png"><img src="images/strongman_images/2012/IMG_0073.png" alt="Another text" title="Another title"></a>
+    <a href="images/strongman_images/2012/IMG_0074.png"><img src="images/strongman_images/2012/IMG_0074.png" alt="My description" title="My title"></a>
+    <a href="images/strongman_images/2012/IMG_0075.png"><img src="images/strongman_images/2012/IMG_0075.png" alt="Another text" title="Another title"></a>
+    <a href="images/strongman_images/2012/IMG_0077.png"><img src="images/strongman_images/2012/IMG_0077.png" alt="Another text" title="Another title"></a>
+    <a href="images/strongman_images/2012/IMG_0078.png"><img src="images/strongman_images/2012/IMG_0078.png" alt="My description" title="My title"></a>
+    <a href="images/strongman_images/2012/IMG_0079.png"><img src="images/strongman_images/2012/IMG_0079.png" alt="Another text" title="Another title"></a>
+    <a href="images/strongman_images/2012/IMG_0081.png"><img src="images/strongman_images/2012/IMG_0081.png" alt="My description" title="My title"></a>
+    <a href="images/strongman_images/2012/IMG_0084.png"><img src="images/strongman_images/2012/IMG_0084.png" alt="Another text" title="Another title"></a>
+    <a href="images/strongman_images/2012/IMG_0085.png"><img src="images/strongman_images/2012/IMG_0085.png" alt="Another text" title="Another title"></a>
+
+</div>
+
+</div>
+
+</body>
+</html>

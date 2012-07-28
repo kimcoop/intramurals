@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Intramurals</title>
+<link href='http://fonts.googleapis.com/css?family=Crushed|Viga|Bangers' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/slider_css.css" type="text/css" />
+<link rel="stylesheet" href="base.css" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() 
+{	 
+	var index = 0;
+	var images = $("#gallery img");
+	var thumbs = $("#thumbs img");
+	var imgHeight = $(thumbs).attr("height");
+	$(thumbs).slice(0,3).clone().appendTo("#thumbs");
+	for (i=0; i<thumbs.length; i++)
+	{
+		$(thumbs[i]).addClass("thumb-"+i);
+		$(images[i]).addClass("image-"+i);
+	}
+	
+	$("#next").click(sift);
+	show(index);
+	setInterval(sift, 8000);
+	
+	function sift()
+	{
+		if (index<(thumbs.length-1)){index+=1 ; }
+		else {index=0}
+		show (index);
+	}
+	
+	function show(num)
+	{
+		$(images).fadeOut(400);
+		$(".image-"+num).stop().fadeIn(400);
+		var scrollPos = (num+1)*imgHeight;
+		$("#thumbs").stop().animate({scrollTop: scrollPos}, 400);		
+	}
+});
+
+</script>
+
+
+
+
+</head>
+<body>
+
+<div id="img"></div>
+
+<div id="container" class="rounded">
+
+	<div id="header">
+		<img id="logo" src="images/pitt_official_logo.png"/>	
+		<h1>University of Pittsburgh Intramurals & Recreation</h1>
+	</div><!-- end header -->
+	
+	<div id="nav">
+	</div><!-- end nav -->
+	
+	<div id="alert" class="section">
+		<span class="notice">Alert:</span>&nbsp;Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+	</div>
+	
+	<div id="images" class="section">
+				
+		<div id="gallery">
+
+    		    <img src="img/1.jpg" />
+    		    <img src="img/2.jpg" />
+    		    <img src="img/3.jpg" />
+    		    <img src="img/4.jpg" />
+            <img src="img/5.jpg" />
+            <img src="img/6.jpg" />
+	        </div>       
+
+          <div id="thumbs">
+						 <img src="img/11.jpg" />
+						 <img src="img/22.jpg" />
+						 <img src="img/33.jpg" />
+						 <img src="img/44.jpg" />
+						 <img src="img/55.jpg" />
+						 <img src="img/66.jpg" />    
+	        </div>
+
+       	<a href="#" id="next"></a>
+	</div><!-- end images -->
+	
+	<div id="announcements" class="section">
+		<h4>Announcements</h4>
+		
+		<ul>
+			<li>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum (04/11/12)</li>
+			<li>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum (04/12/12)</li>
+			<li>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  lorem ipsum (04/25/12)</li>
+		</ul>
+		
+	</div><!-- end announcements -->
+	
+	<div id="events" class="section">
+		<h4>Upcoming Events</h4>
+		
+		<div id="events_inner">
+				
+				<div class="event">
+				Event 1 blurb
+				</div>
+				
+				<div class="event">
+				Event 2 blurb
+				</div>
+				
+				<div class="event">
+				Event 3 blurb
+				</div>
+				
+				<div class="event">
+				Event 4 blurb
+				</div>
+				
+				<div class="event">
+				Event 5 blurb
+				</div>
+				
+		</div><!-- end events_inner -->
+		
+		
+	</div><!-- end events-->
+	
+	<div id="footer_section">
+		<div id="footer_section_inner">
+			
+				<div id="left_col" class="links">
+				<a href="">Employment</a><br>
+				<a href="">Contact</a>
+				</div>
+				<div id="center_col" class="links">
+				<a href="">Bike Rental</a><br>
+				<a href="">Locker Rental	</a>	
+				</div>
+				<div id="right_col" class="links">
+				<a href="">Mailing List</a><br>
+				<a href="">Special Alerts</a>
+				</div>
+		</div><!-- end footer_section_inner -->
+		
+		<div id="footer">
+			Copyright 2012 | Login
+		</div>
+	
+	</div><!-- end footer_section -->
+
+
+</div>
+
+
+</body>
+</html>

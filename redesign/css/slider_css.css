@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	outline: 0;
+}
+
+img{
+	display: block;
+}
+
+#gallery, #thumbs{
+	float: left;
+}
+
+#gallery{
+	width: 800px;
+	height: 300px;
+	overflow: hidden;
+}
+
+#gallery img{
+	position: absolute;
+}
+
+#thumbs{
+	width: 100px;
+	height: 300px;
+	overflow: hidden;
+}
+
+#next{
+	display: block;
+	width: 47px;
+	height: 43px;
+	background: url(../images/arrow.png);
+	position: relative;
+	top: 257px;
+	left: 855px;
+}
+
+#next:hover{
+	background: url(../images/arrowmo.png);
+}
+
+.clear{
+	clear: both;
+}
